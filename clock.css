@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: rgba(61, 8, 123, 1);
+}
+
+.main-container {
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    position: relative;
+}
+
+#left-main-grid-container{
+    width: 44%;
+    height: 75vh;
+    display: grid;
+    grid-row-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 16.5% 50% 10%;
+}
+
+.grid-item {
+    font-size: 10px;
+}
+
+#left-top-container {
+    background-image: url('./images/clock_logo.png');
+    background-size: 100% 100%;
+    opacity: 1;
+    background-repeat: no-repeat;
+    
+}
+
+#left-middle-container {
+    /* border: 2px solid red; */
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    border-radius: 10px;
+}
+
+.left-middle-container-inner {
+    /* border-bottom: 2px solid red; */
+    width: 100%;
+    height: 33%;
+    position: relative;
+}
+.left-middle-container-inner1 {
+    width: 100%;
+    height: 33%;
+    position: relative;
+}
+
+#sun-logo{
+    background-image: url("./images/sunLogo.png");
+    width: 15%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline;
+    position: absolute;
+    left: 0;
+}
+#lunch-logo{
+    background-image: url("./images/lunchLogo.png");
+    width: 15%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline;
+    position: absolute;
+    left: 0;
+}
+#nap-logo{
+    background-image: url("./images/napLogo.png");
+    width: 15%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline;
+    position: absolute;
+    left: 0;
+}
+
+.dropdown{
+    width: 85%;
+    height: 100%;
+    padding: 25px;
+    position: absolute;
+    left: 60px;
+    right: 0;
+}
+.font{
+    font-size: 18px;
+    color: rgba(61, 8, 123, 1);
+}
+#wakeUpTimeSelector{
+    padding-right: 80px;
+    margin-left: 11px;
+}
+
+#lunchTimeSelector{
+    padding-right: 80px;
+    margin-left: 34px;
+}
+#napTimeSelector{
+    
+    padding-right: 80px;
+    margin-left: 47px;
+    
+}
+.dropdown-selector{
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: rgba(61, 8, 123, 0.87);
+    border: 1px solid rgba(237, 237, 237, 1);
+}
+
+
+#left-bottom-container {
+    text-align: center;
+    border: 2px solid red;
+    background-color: white;
+    padding-top: 15px;
+    border-radius: 5px;
+}
+
+#right-main-grid-container {
+    /* border: 4px solid yellow; */
+    width: 45%;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    grid-template-rows: 20% 70%;
+}
+
+.grid-item1 {
+    font-size: 35px;
+}
+
+#right-top-container {
+    /* border: 2px solid blue; */
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.right-top-container-ub{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+#rtc-ub-text{
+    font-size: 20px;
+    color: rgba(61, 8, 123, 1);
+}
+#rtc-ub-hrs{
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color:rgba(246, 226, 255, 1);
+}
+#rtc-ub-min{
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgba(246, 226, 255, 1);
+}
+#rtc-ub-sec{
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgba(246, 226, 255, 1);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#rtc-ub-text2{
+    background-color: rgb(188, 75, 216);
+    color: white;
+    font-size: 20px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+.right-top-container-lb1{
+    width: 75%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    position: absolute;
+    top: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+.right-top-container-lb2{
+    width: 64%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.35;
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#right-bottom-container {
+    position: relative;
+    /* border: 5px solid red;  */
+}
+
+#right-bottom-text-container{
+    /* border: 5px solid green; */
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 100%;
+    height: 20%;
+    font-size: 25px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#right-bottom-img-container {
+    /* border: 10px solid black;  */
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    background-image:url('./images/digitalClock.png'); 
+    background-size: 100% 100%;
+    background-position: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* for Responsive */
+@media screen and (min-width: 1000px) and (max-width: 1120px){
+    .dropdown{
+        width: 85%;
+        padding: 15px;
+        position: absolute;
+        left: 50px;
+        right: 0;
+    }
+    #wakeUpTimeSelector{
+        padding-right: 8px;
+        margin-left: 6px;
+    }
+    #lunchTimeSelector{
+        padding-right: 8px;
+        margin-left: 30px; 
+    }
+    #napTimeSelector{
+        padding-right: 8px;
+        margin-left: 42px;
+    }
+}
+
+
+
+@media screen and (min-width: 820px) and (max-width: 1000px){
+    .dropdown{
+        width: 85%;
+        padding: 15px;
+        position: absolute;
+        left: 50px;
+        right: 0;
+    }
+    .font{
+        font-size: 13px;
+    }
+    .dropdown-selector{
+        font-size: 11px;
+    }
+    #wakeUpTimeSelector{
+        padding-right: 8px;
+        margin-left: 6px;
+    }
+    #lunchTimeSelector{
+        padding-right: 8px;
+        margin-left: 22px; 
+    }
+    #napTimeSelector{
+        padding-right: 8px;
+        margin-left: 32px;
+    }
+    #rtc-ub-text, #rtc-ub-hrs, #rtc-ub-min, #rtc-ub-sec, #rtc-ub-text2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px){
+    .main-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    #left-main-grid-container{
+        width: 100%;
+        height: 45vh;
+        display: grid;
+        grid-row-gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 16.5% 50% 10%;
+    }
+    #left-top-container{
+        margin-top: 5px;
+    }
+    #sun-logo, #lunch-logo, #nap-logo{
+        width: 15%;
+    }
+    .dropdown{
+        width: 85%;
+        padding: 20px;
+        position: absolute;
+        left: 30px;
+        right: 0;
+        bottom: 10px;
+    }
+    .font{
+        font-size: 13px;
+    }
+    .dropdown-selector{
+        font-size: 11px;
+    }
+    #wakeUpTimeSelector{
+        padding-right: 3px;
+        margin-left: 6px;
+    }
+    #lunchTimeSelector{
+        padding-right: 3px;
+        margin-left: 22px; 
+    }
+    #napTimeSelector{
+        padding-right: 3px;
+        margin-left: 32px;
+    }
+    #left-bottom-container {
+        padding-top: 8px;
+        border-radius: 5px;
+    }
+
+    #right-main-grid-container {
+        /* border: 4px solid yellow; */
+        width: 100%;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        grid-template-rows: 20% 70%;
+    }
+    #rtc-ub-text, #rtc-ub-hrs, #rtc-ub-min, #rtc-ub-sec, #rtc-ub-text2{
+        font-size: 13px;
+        padding: 1px;
+    }
+}

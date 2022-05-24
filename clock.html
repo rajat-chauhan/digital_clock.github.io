@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <div class="main-container">
+<!-- left-container -->
+        <div id="left-main-grid-container">
+            <div class="grid-item" id="left-top-container">
+
+            </div>
+
+            <div class="grid-item" id="left-middle-container">
+                <div class="left-middle-container-inner">
+                    <div id="sun-logo"></div>
+                    <div class="dropdown">
+                        <label class="font">Set wake up time</label>
+                        <select id="wakeUpTimeSelector" class="dropdown-selector">
+                            <option value="0">Default</option>
+                            <option value="1">1 AM - 2 AM</option>
+                            <option value="2">2 AM - 3 AM</option>
+                            <option value="3">3 AM - 4 AM</option>
+                            <option value="4">4 AM - 5 AM</option>
+                            <option value="5">5 AM - 6 AM</option>
+                            <option value="6">6 AM - 7 AM</option>
+                            <option value="7">7 AM - 8 AM</option>
+                            <option value="8">8 AM - 9 AM</option>
+                            <option value="9">9 AM - 10 AM</option>
+                            <option value="10">10 AM - 11 AM</option>
+                            <option value="11">11 AM - 12 PM</option>
+                            <option value="12">12 PM - 1 PM</option>
+                            <option value="13">1 PM - 2 PM</option>
+                            <option value="14">2 PM - 3 PM</option>
+                            <option value="15">3 PM - 4 PM</option>
+                            <option value="16">4 PM - 5 PM</option>
+                            <option value="17">5 PM - 6 PM</option>
+                            <option value="18">6 PM - 7 PM</option>
+                            <option value="19">7 PM - 8 PM</option>
+                            <option value="20">8 PM - 9 PM</option>
+                            <option value="21">9 PM - 10 PM</option>
+                            <option value="22">10 PM - 11 PM</option>
+                            <option value="23">11 PM - 12 AM</option>
+                            <option value="24">12 AM - 1 AM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="left-middle-container-inner">
+                    <div id="lunch-logo"></div>
+                    <div class="dropdown">
+                        <label class="font">Set lunch time</label>
+                        <select id="lunchTimeSelector" class="dropdown-selector">
+                            <option value="0">Default</option>
+                            <option value="1">1 AM - 2 AM</option>
+                            <option value="2">2 AM - 3 AM</option>
+                            <option value="3">3 AM - 4 AM</option>
+                            <option value="4">4 AM - 5 AM</option>
+                            <option value="5">5 AM - 6 AM</option>
+                            <option value="6">6 AM - 7 AM</option>
+                            <option value="7">7 AM - 8 AM</option>
+                            <option value="8">8 AM - 9 AM</option>
+                            <option value="9">9 AM - 10 AM</option>
+                            <option value="10">10 AM - 11 AM</option>
+                            <option value="11">11 AM - 12 PM</option>
+                            <option value="12">12 PM - 1 PM</option>
+                            <option value="13">1 PM - 2 PM</option>
+                            <option value="14">2 PM - 3 PM</option>
+                            <option value="15">3 PM - 4 PM</option>
+                            <option value="16">4 PM - 5 PM</option>
+                            <option value="17">5 PM - 6 PM</option>
+                            <option value="18">6 PM - 7 PM</option>
+                            <option value="19">7 PM - 8 PM</option>
+                            <option value="20">8 PM - 9 PM</option>
+                            <option value="21">9 PM - 10 PM</option>
+                            <option value="22">10 PM - 11 PM</option>
+                            <option value="23">11 PM - 12 AM</option>
+                            <option value="24">12 AM - 1 AM</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="left-middle-container-inner1">
+                    <div id="nap-logo"></div>
+                    <div class="dropdown">
+                        <label class="font">Set nap time</label>
+                        <select id="napTimeSelector" class="dropdown-selector">
+                            <option value="0">Default</option>
+                            <option value="1">1 AM - 2 AM</option>
+                            <option value="2">2 AM - 3 AM</option>
+                            <option value="3">3 AM - 4 AM</option>
+                            <option value="4">4 AM - 5 AM</option>
+                            <option value="5">5 AM - 6 AM</option>
+                            <option value="6">6 AM - 7 AM</option>
+                            <option value="7">7 AM - 8 AM</option>
+                            <option value="8">8 AM - 9 AM</option>
+                            <option value="9">9 AM - 10 AM</option>
+                            <option value="10">10 AM - 11 AM</option>
+                            <option value="11">11 AM - 12 PM</option>
+                            <option value="12">12 PM - 1 PM</option>
+                            <option value="13">1 PM - 2 PM</option>
+                            <option value="14">2 PM - 3 PM</option>
+                            <option value="15">3 PM - 4 PM</option>
+                            <option value="16">4 PM - 5 PM</option>
+                            <option value="17">5 PM - 6 PM</option>
+                            <option value="18">6 PM - 7 PM</option>
+                            <option value="19">7 PM - 8 PM</option>
+                            <option value="20">8 PM - 9 PM</option>
+                            <option value="21">9 PM - 10 PM</option>
+                            <option value="22">10 PM - 11 PM</option>
+                            <option value="23">11 PM - 12 AM</option>
+                            <option value="24">12 AM - 1 AM</option>
+                        </select>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="grid-item" id="left-bottom-container">SET TIME !!</div>
+        </div>
+<!-- right-container -->
+        <div id="right-main-grid-container">
+            <div class="grid-item1" id="right-top-container">
+                <div class="right-top-container-ub">
+                    <div id="rtc-ub-text">TIME</div>
+                    <div id="rtc-ub-hrs">
+                        <span id="hrs" style="margin-left: 5px; color: rgba(138, 17, 191, 1);">00</span>
+                        <p style="font-size:15px; color: rgba(138, 17, 191, 1);">hours</p>
+                    </div>
+                    <div>:</div>
+                    <div id="rtc-ub-min">
+                        <span id="min" style="margin-left: 2px; color: rgba(138, 17, 191, 1);">00</span>
+                        <p style="font-size:15px; color: rgba(138, 17, 191, 1);">mins</p>
+                    </div>
+                    <div>:</div>
+                    <div id="rtc-ub-sec">
+                        <span id="sec" style="margin-left: 2px; color: rgba(138, 17, 191, 1);">00</span>
+                        <p style="font-size:15px; color: rgba(138, 17, 191, 1);">secs</p>
+                    </div>
+                    <div></div>
+                    <div id="rtc-ub-text2">AM</div>
+                </div>
+
+                <div class="right-top-container-lb1"></div>
+                <div class="right-top-container-lb2"></div>
+
+            </div>
+            <div class="grid-item1" id="right-bottom-container">
+                <div id="right-bottom-text-container"></div>
+                <div id="right-bottom-img-container"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="clock.js"></script>
+</body>
+
+</html>
