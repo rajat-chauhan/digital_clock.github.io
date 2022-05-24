@@ -315,7 +315,7 @@ body{
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 600px){
+@media screen and (min-width: 359px) and (max-width: 600px){
     .main-container{
         display: flex;
         justify-content: space-evenly;
@@ -344,14 +344,15 @@ body{
         bottom: 10px;
     }
     .font{
-        font-size: 13px;
+        font-size: 10px;
+        font-weight: 500;
     }
     .dropdown-selector{
         font-size: 11px;
     }
     #wakeUpTimeSelector{
         padding-right: 3px;
-        margin-left: 6px;
+        margin-left: 10px;
     }
     #lunchTimeSelector{
         padding-right: 3px;
@@ -359,7 +360,7 @@ body{
     }
     #napTimeSelector{
         padding-right: 3px;
-        margin-left: 32px;
+        margin-left: 30px;
     }
     #left-bottom-container {
         padding-top: 8px;
@@ -375,8 +376,16 @@ body{
         grid-row-gap: 30px;
         grid-template-rows: 20% 70%;
     }
-    #rtc-ub-text, #rtc-ub-hrs, #rtc-ub-min, #rtc-ub-sec, #rtc-ub-text2{
+    #rtc-ub-text, #rtc-ub-hrs, #rtc-ub-min, #rtc-ub-sec{
         font-size: 13px;
         padding: 1px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    #rtc-ub-text2{
+        font-size: 13px;
+        padding: 8px;
+        padding-top: 22px;
+        padding-bottom: 22px;
     }
 }
