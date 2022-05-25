@@ -148,7 +148,7 @@ body{
 #right-main-grid-container {
     /* border: 4px solid yellow; */
     width: 45%;
-    height: 75vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 30px;
@@ -281,6 +281,7 @@ body{
     color: white;
     padding: 15px;
     border-radius: 5px;
+    text-transform: uppercase;
 }
 
 

@@ -47,14 +47,17 @@ function setTimeFun(){
     }
 }
 
+// setTime.addEventListener('click', Makediv, {once:true});  // "once" is used so that "click" works only once
 setTime.addEventListener('click', Makediv);
 
-function Makediv(){
-    let container = document.createElement("div");
-    container.id = "dynamic-block";
-    container.className = "grid-item";
-    document.getElementById("left-main-grid-container").appendChild(container);
+let container = document.createElement("div");
+container.id = "dynamic-block";
+container.className = "grid-item";
+document.getElementById("left-main-grid-container").appendChild(container);
+container.textContent = "Waiting For User to set wake up, lunch & nap time..."
 
+function Makediv(){
+    
     let wakeUpValue = document.getElementById("wakeUpTimeSelector");
     let value1 = wakeUpValue.options[wakeUpValue.selectedIndex].text;
     document.getElementById("dynamic-block").innerHTML = "Wake up Time: "+ value1 + "<br>";
@@ -67,4 +70,7 @@ function Makediv(){
     let value3 = napValue.options[napValue.selectedIndex].text;
     document.getElementById("dynamic-block").innerHTML += "Nap Time: "+ value3;
 
+    // setTime.removeEventListener('click', Makediv); //by using this "click" works only once
+
 }
+
