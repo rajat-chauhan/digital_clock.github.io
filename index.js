@@ -47,3 +47,24 @@ function setTimeFun(){
     }
 }
 
+setTime.addEventListener('click', Makediv);
+
+function Makediv(){
+    let container = document.createElement("div");
+    container.id = "dynamic-block";
+    container.className = "grid-item";
+    document.getElementById("left-main-grid-container").appendChild(container);
+
+    let wakeUpValue = document.getElementById("wakeUpTimeSelector");
+    let value1 = wakeUpValue.options[wakeUpValue.selectedIndex].text;
+    document.getElementById("dynamic-block").innerHTML = "Wake up Time: "+ value1 + "<br>";
+
+    let lunchValue = document.getElementById("lunchTimeSelector");
+    let value2 = lunchValue.options[lunchValue.selectedIndex].text;
+    document.getElementById("dynamic-block").innerHTML += "Lunch Time: "+ value2 + "<br>";
+
+    let napValue = document.getElementById("napTimeSelector");
+    let value3 = napValue.options[napValue.selectedIndex].text;
+    document.getElementById("dynamic-block").innerHTML += "Nap Time: "+ value3;
+
+}

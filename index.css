@@ -273,6 +273,16 @@ body{
     border-bottom-right-radius: 10px;
 }
 
+#dynamic-block{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: violet;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
 
 /* for Responsive */
 @media screen and (min-width: 1000px) and (max-width: 1120px){
@@ -342,7 +352,7 @@ body{
         display: grid;
         grid-row-gap: 25px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 16.5% 50% 10%;
+        grid-template-rows: 16.5% 50% 10% 16.5%;
     }
     #left-top-container{
         margin-top: 5px;
