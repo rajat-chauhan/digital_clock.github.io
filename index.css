@@ -350,7 +350,7 @@ body{
         width: 100%;
         height: 45vh;
         display: grid;
-        grid-row-gap: 25px;
+        grid-row-gap: 20px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 16.5% 50% 10% 16.5%;
     }
@@ -362,7 +362,7 @@ body{
     }
     .dropdown{
         width: 85%;
-        padding: 20px;
+        padding: 18px;
         position: absolute;
         left: 30px;
         right: 0;
@@ -405,6 +405,8 @@ body{
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
         grid-template-rows: 20% 70%;
+        position: absolute;
+        top: 54vh;
     }
     #rtc-ub-text, #rtc-ub-hrs, #rtc-ub-min, #rtc-ub-sec{
         font-size: 13px;
@@ -420,5 +422,11 @@ body{
     }
     #right-bottom-text-container{
         font-size: 15px;
+    }
+    #dynamic-block{
+        display: block;
+        font-size: 10px;
+        padding: 10px;
+        
     }
 }
