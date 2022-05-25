@@ -25,3 +25,25 @@ function clock(){
 }
 setInterval(clock, 100);
 
+let setTime = document.getElementById("left-bottom-container");
+setTime.addEventListener('click', setTimeFun);
+
+function setTimeFun(){
+    let wakeup = document.getElementById("wakeUpTimeSelector").value;
+    let lunch = document.getElementById("lunchTimeSelector").value;
+    let nap = document.getElementById("napTimeSelector").value;
+    let hour = new Date().getHours();
+    if(wakeup == hour){
+        document.getElementById("right-bottom-img-container").style.backgroundImage = "url(./images/wakeup.png)";
+        document.getElementById("right-bottom-text-container").innerHTML = "Wake up and be awesome today !!";
+    }
+    else if(lunch == hour){
+        document.getElementById("right-bottom-img-container").style.backgroundImage = "url(./images/lunchImage.png)";
+        document.getElementById("right-bottom-text-container").innerHTML = "Let's have lunch !!";
+    }
+    else if(nap == hour){
+        document.getElementById("right-bottom-img-container").style.backgroundImage = "url(./images/nap.png)";
+        document.getElementById("right-bottom-text-container").innerHTML = "Things can wait take a nap !!";
+    }
+}
+

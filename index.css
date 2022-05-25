@@ -129,10 +129,20 @@ body{
 
 #left-bottom-container {
     text-align: center;
-    border: 2px solid red;
-    background-color: white;
-    padding-top: 15px;
+    /* border: 2px solid red; */
+    /* background-color: white; */
+    position: relative;
+    padding: 15px;
+    padding-bottom: 20px;
     border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+}
+#lbc-text{
+    position: absolute;
+    bottom: 10px;
+    left: 62px;
 }
 
 #right-main-grid-container {
@@ -194,6 +204,7 @@ body{
 }
 #rtc-ub-text2{
     background-color: rgb(188, 75, 216);
+    background-image: url("./images/AM_svg.png");
     color: white;
     font-size: 20px;
     padding-top: 28px;
@@ -232,14 +243,18 @@ body{
 #right-bottom-text-container{
     /* border: 5px solid green; */
     background-color: white;
+    color: #8E53F0;
+    text-transform: uppercase;
     position: absolute;
     top: 0;
+    padding-bottom: 5%;
     padding-left: 5%;
-    padding-top: 5%;
+    padding-top: 3.5%;
     width: 100%;
     height: 20%;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
