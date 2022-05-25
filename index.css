@@ -378,8 +378,13 @@ body{
         margin-left: 30px;
     }
     #left-bottom-container {
-        padding-top: 8px;
+        font-size: 15px;
         border-radius: 5px;
+    } 
+    #lbc-text{
+        position: absolute;
+        bottom: 10px;
+        left: 46px;
     }
 
     #right-main-grid-container {
@@ -393,14 +398,14 @@ body{
     }
     #rtc-ub-text, #rtc-ub-hrs, #rtc-ub-min, #rtc-ub-sec{
         font-size: 13px;
-        padding: 1px;
+        padding: 0.5px;
         margin-top: 2px;
         margin-bottom: 2px;
     }
     #rtc-ub-text2{
         font-size: 13px;
         padding: 8px;
-        padding-top: 22px;
-        padding-bottom: 22px;
+        padding-top: 23px;
+        padding-bottom: 23px;
     }
 }
